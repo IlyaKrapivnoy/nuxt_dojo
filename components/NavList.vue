@@ -15,7 +15,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style>
 .router-link-exact-active {
   color: #12b488;
 }
