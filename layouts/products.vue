@@ -1,29 +1,22 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink tp="/products ">Nuxt Dojo Merge</NuxtLink>
+    <header class="shadow-sm bg-white">
+      <nav class="container mx-auto p-4">
+        <NuxtLink to="/products" class="font-bold text-2xl">Nuxt Dojo Merge</NuxtLink>
       </nav>
     </header>
 
-    <div>
+    <div class="container mx-auto p-4">
       <slot />
     </div>
 
-    <footer>
-      <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/products">Products</NuxtLink></li>
-      </ul>
+    <footer class="container mx-auto p-4 flex justify-between border-t-2">
+      <NavList :links="navLinks" />
     </footer>
   </div>
 </template>
 
-<script setup></script>
-
-<style scoped>
-.router-link-exact-active {
-  color: #12b488;
-}
-</style>
+<script setup>
+import NavList from '~/components/NavList.vue';
+import { navLinks } from '~/data/navData';
+</script>
