@@ -1,7 +1,7 @@
 <template>
   <ul class="flex gap-4 items-center">
     <li v-for="{ to, text } in links" :key="text">
-      <NuxtLink :to="to">{{ text }}</NuxtLink>
+      <NuxtLink :to="to" :class="{ btn: text === 'Products' }">{{ text }}</NuxtLink>
     </li>
   </ul>
 </template>
