@@ -1,14 +1,16 @@
 <template>
-  <h2>Home</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aliquid asperiores autem
-    cupiditate distinctio dolores doloribus eius est maiores modi necessitatibus nostrum, quidem sed similique totam
-    velit veniam.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aut debitis doloremque doloribus
-    velit voluptate.
-  </p>
+  <div>
+    <h2>Home</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias aliquid asperiores autem
+      cupiditate distinctio dolores doloribus eius est maiores modi necessitatibus nostrum, quidem sed similique totam
+      velit veniam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aut debitis doloremque doloribus
+      velit voluptate.
+    </p>
+  </div>
 </template>
 
 <script setup></script>
