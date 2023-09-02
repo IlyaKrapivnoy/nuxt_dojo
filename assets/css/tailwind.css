@@ -10,4 +10,8 @@ body {
     .btn {
         @apply bg-gray-200 px-3 py-2 rounded-md text-sm text-white;
     }
+
+    .card {
+        @apply flex flex-col justify-between p-3 rounded-md bg-white shadow-md h-full min-h-[260px];
+    }
 }
