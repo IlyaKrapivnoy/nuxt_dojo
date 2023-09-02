@@ -10,7 +10,7 @@
           Price - <span class="font-bold">${{ product.price }}</span>
         </p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Product description:</h3>
-        <p>{{ product.description }}</p>
+        <p class="mb-6">{{ product.description }}</p>
         <button class="btn flex items-center">
           <i class="material-icons mr-2">add_shopping_cart</i>
           <span>Add to cart</span>

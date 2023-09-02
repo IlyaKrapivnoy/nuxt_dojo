@@ -11,7 +11,17 @@
   </p>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: 'Nuxt Dojo | About',
+  meta: [
+    {
+      name: 'description',
+      content: 'Nuxt 3 Merch',
+    },
+  ],
+});
+</script>
 
 <style scoped>
 h2 {
