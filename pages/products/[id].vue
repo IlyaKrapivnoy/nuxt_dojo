@@ -1,17 +1,16 @@
 <template>
-  <div>Product details for {{ id }}</div>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem ea incidunt libero magnam magni mollitia, nam
-    nemo non nulla porro provident quaerat quas qui quidem sequi tempore temporibus voluptatibus!
-  </p>
+  <ProductDetails :product="product" />
 </template>
 
 <script setup>
+import ProductDetails from '~/components/ProductDetails.vue';
+
 const { id } = useRoute().params;
+const uri = 'https://fakestoreapi.com/products/' + id;
+
+const { data: product } = await useFetch(uri);
 
 definePageMeta({
   layout: 'products',
 });
 </script>
-
-<style scoped></style>
