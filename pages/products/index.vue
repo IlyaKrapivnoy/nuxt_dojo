@@ -6,8 +6,6 @@
         <NuxtLink :to="`/products/${p.id}`">{{ p.title }}</NuxtLink>
       </div>
     </div>
-
-    <p>{{ console.log('products', products) }}</p>
   </div>
 </template>
 
