@@ -1,7 +1,7 @@
 <template>
   <div class="card text-center">
     <div class="flex items-center h-full">
-      <img :src="product.image" :alt="product.title" class="thumb" />
+      <img :src="product.image" alt="product image" class="thumb" />
     </div>
     <div>
       <p class="font-bold text-gray-500 m-4 truncate">{{ product.title }}</p>

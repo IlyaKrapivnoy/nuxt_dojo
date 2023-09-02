@@ -2,4 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  app: {
+    head: {
+      title: 'Nuxt Dojo',
+      meta: [{ name: 'description', content: 'Practicing Nuxt 3' }],
+      link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }],
+    },
+  },
 });
